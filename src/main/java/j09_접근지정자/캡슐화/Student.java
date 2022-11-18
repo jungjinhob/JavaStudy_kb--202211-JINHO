@@ -3,6 +3,7 @@ package j09_접근지정자.캡슐화;
 public class Student {
     private String name;
     private String gender;
+
     Student(){
 
     }
@@ -12,6 +13,9 @@ public class Student {
 }
     public void setName(String name) {
             this.name = name;
+    }
+    public String getGender(){
+        return this.gender;
     }
 
 public void printInfo() {
