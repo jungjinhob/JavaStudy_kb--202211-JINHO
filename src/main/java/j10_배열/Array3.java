@@ -3,7 +3,7 @@ package j10_배열;
 import java.util.Random;
 
 public class Array3 {
-    public static int fountMinNumber(int[] numbers){
+    public static int foundMinNumber(int[] numbers){
         int min = numbers[0];
         for(int i = 0; i < numbers.length; i++){
             if(min > numbers[i]){
@@ -54,7 +54,7 @@ public class Array3 {
         System.out.println();
         System.out.println("총합 : " + sum);
 
-        System.out.println("최소값 : " + fountMinNumber(randomArray));
+        System.out.println("최소값 : " + foundMinNumber(randomArray));
         System.out.println("최대값 : " + foundMaxNumber(randomArray));
 
 
