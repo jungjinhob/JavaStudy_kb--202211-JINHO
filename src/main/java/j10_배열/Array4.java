@@ -8,13 +8,13 @@ public class Array4 {
     1.두 배열에서 중복된 값 중 최소값
     2.두 배열에서 중복되지 않은 값 중 최대 값
      */
-    public static int[] add(int[] array, int value) { //기존보다 인덱스가 1더 큰 배열을 계속 만듬
-        int[] resultArray = new int[array.length + 1];
-        for (int i = 0; i < array.length; i++) {
-            resultArray[i] = array[i];
+    public static int[] add(int[] array, int value) {
+        int[] resultArray = new int[array.length + 1]; //기존보다 인덱스가 1더 큰 배열을 계속 만듬
+        for (int i = 0; i < array.length; i++) { // 계속 new int로 0값이 초기화되므로 value값을 넣어줌
+            resultArray[i] = array[i];              // 이 FOR문 없으면 0값 초기화된대로 들어가기 때문에 결과값이 0이 나올거임
         }
-        resultArray[array.length] = value;
-        return resultArray;
+        resultArray[array.length] = value; //각 인덱스마다 해당하는 다른값을 삽입. EX 1,3,5 를 0,1,2 배열에 넣으면
+        return resultArray;                 // {1} -> {1,3} -> {1,3,5}
     }
 
     public static int[] duplicateArray(int[] array1, int[] array2) {
