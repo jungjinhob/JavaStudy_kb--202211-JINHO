@@ -8,12 +8,12 @@ public class Array4 {
     1.두 배열에서 중복된 값 중 최소값
     2.두 배열에서 중복되지 않은 값 중 최대 값
      */
-    public static int[] add(int[] array, int value) { //기존보다 인덱스가 1더 큰 배열을 계속 만듬
-        int[] resultArray = new int[array.length + 1];
-        for (int i = 0; i < array.length; i++) {
+    public static int[] add(int[] array, int value) {
+        int[] resultArray = new int[array.length + 1]; // 기존배열에서 크기 1추가 ex .length = 5라 가정.
+        for (int i = 0; i < array.length; i++) { // 그전꺼 삽입 ex. 0~4에 삽입
             resultArray[i] = array[i];
         }
-        resultArray[array.length] = value;
+        resultArray[array.length] = value; // 5에 삽입. ( 0~5)
         return resultArray;
     }
 

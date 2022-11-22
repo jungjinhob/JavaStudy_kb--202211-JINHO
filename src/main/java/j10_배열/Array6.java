@@ -20,6 +20,7 @@ public class Array6 {
         }else{
             System.out.println("다르다");
         }
+
         System.out.println("[배열 a]");
         for(int i = 0; i < a.length; i++){
             System.out.print(a[i] + (i != a.length - 1 ? ", " : " \n"));
