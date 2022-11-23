@@ -21,7 +21,7 @@ public class AnimalMain {
         System.out.println("[다운캐스팅]");
         for(int i = 0; i < animals.length; i++) {
             if(animals[i] instanceof Human){ //animals의 하위 객체가 human일시
-                Human h = (Human)animals[i]; // (human) 만 다운캐스팅 부분.
+                Human h = (Human)animals[i];// (human) 만 다운캐스팅 부분.
                 h.readBooks();
             }else if ( animals[i] instanceof Tiger){ //animals의 하위 객체가 Tiger일시
                 Tiger t = (Tiger)animals[i];
