@@ -10,12 +10,13 @@ public class EntityMain {
         System.out.println(entity2.hashCode());
         System.out.println(entity.getAddress());
 
-        System.out.println(Entity.class);
+        System.out.println(entity.getClass());
         Class c = Entity.class;
         Object s= new Student(20220001,"정진호");
         System.out.println(Entity.class == entity.getClass());
         System.out.println(Entity.class.equals(s.getClass()));
         System.out.println(s instanceof Entity);
+
     }
 
 
