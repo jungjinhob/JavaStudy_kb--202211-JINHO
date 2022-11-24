@@ -5,7 +5,7 @@ import lombok.Getter;
 import java.util.Scanner;
 
 public class ScannerSingleton {
-    //2. 자기 자신을 static 변수로 가지고 있어야함. -> null 값이 계속 초기화되면 안되니까
+    //2. 자기 자신을 static 변수로 가지고 있어야함. -> null 값이 계속 초기화되면 안되니까!!
     private static ScannerSingleton instance = null;
 
     @Getter

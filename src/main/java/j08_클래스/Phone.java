@@ -1,7 +1,7 @@
 package j08_클래스;
 
 public class Phone {
-    String company;
+    public static String company;
     String model;
     Phone(){
 
@@ -14,7 +14,7 @@ public class Phone {
         System.out.println();
     }
 
-    void printPhoneCompany(){
+    public static void printPhoneCompany(){
         System.out.println("제조사 : " + company);
         System.out.println();
     }
