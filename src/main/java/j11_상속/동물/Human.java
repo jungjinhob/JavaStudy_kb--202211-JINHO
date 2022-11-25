@@ -2,7 +2,7 @@ package j11_상속.동물;
 
 public class Human extends Animal{
     public Human() {
-        super();
+        super(); //Animal 생성자 가리킴.
 
     }
     @Override // @문법 -> 어노테이션

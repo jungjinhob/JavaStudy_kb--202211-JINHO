@@ -6,7 +6,7 @@ public class PhoneMain {
     public static void main(String[] args) {
         Phone iPhone14 = new Phone("Apple","iPhone14"); // new -> 메모리할당
         Phone GalaxyS22 = new Phone("SAMSUNG","GalaxyS22");
-
+        iPhone14.printPhoneModel();
 
    }
 }

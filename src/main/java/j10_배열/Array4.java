@@ -9,12 +9,21 @@ public class Array4 {
     2.두 배열에서 중복되지 않은 값 중 최대 값
      */
     public static int[] add(int[] array, int value) {
+<<<<<<< HEAD
         int[] resultArray = new int[array.length + 1]; //기존보다 인덱스가 1더 큰 배열을 계속 만듬
         for (int i = 0; i < array.length; i++) { // 계속 new int로 0값이 초기화되므로 value값을 넣어줌
             resultArray[i] = array[i];              // 이 FOR문 없으면 0값 초기화된대로 들어가기 때문에 결과값이 0이 나올거임
         }
         resultArray[array.length] = value; //각 인덱스마다 해당하는 다른값을 삽입. EX 1,3,5 를 0,1,2 배열에 넣으면
         return resultArray;                 // {1} -> {1,3} -> {1,3,5}
+=======
+        int[] resultArray = new int[array.length + 1]; // 기존배열에서 크기 1추가 ex .length = 5라 가정.
+        for (int i = 0; i < array.length; i++) { // 그전꺼 삽입 ex. 0~4에 삽입
+            resultArray[i] = array[i];
+        }
+        resultArray[array.length] = value; // 5에 삽입. ( 0~5)
+        return resultArray;
+>>>>>>> 091b59da597e3073620f3a6387228270ed892ab0
     }
 
     public static int[] duplicateArray(int[] array1, int[] array2) {
