@@ -4,7 +4,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
-@Builder
+@Builder //Student의 빌더와 같은 구조
 @ToString
 public class User {
     private String username;
