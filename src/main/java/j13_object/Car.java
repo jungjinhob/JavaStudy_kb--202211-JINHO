@@ -10,7 +10,7 @@ public class Car {
     }
 
     @Override
-    public String toString() {
+    public String toString() {// tostring은 object것을 오버라이드 한것.
         return "Car{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +

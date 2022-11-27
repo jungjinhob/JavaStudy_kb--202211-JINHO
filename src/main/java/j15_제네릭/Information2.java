@@ -3,7 +3,7 @@ package j15_제네릭;
 
 import lombok.Getter;
 
-public class Information2 {
+public class Information2 {// 매개변수가 object  T대신.
     @Getter
     private Object target;
 

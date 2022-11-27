@@ -12,7 +12,8 @@ public class StudentMain {
         Student student2 = new Student(20220001,"정진호");
 
 
-        System.out.println(student.hashCode() == student2.hashCode());
+        System.out.println(student.hashCode() == student2.hashCode()); // objects.hashcode 다른 주소 객체라도
+        // 값이 같으면 true
 
 
         Class c = student.getClass();

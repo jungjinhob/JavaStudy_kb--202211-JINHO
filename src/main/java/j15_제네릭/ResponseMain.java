@@ -11,8 +11,12 @@ public class ResponseMain {
                 .studentCode(20220011)
                 .name("정진호")
                 .build();
+        Teacher teacher = Teacher.builder()
+                        .name("김준일")
+                        .teacherCode(20220001)
+                                .build();
 
         System.out.println(response("학생데이터 응답", student)); //-> student 자리가 T data자리
-        System.out.println(response("student code error !!", "학번에 오류가 있습니다."));
+        System.out.println(response("student code error !!",teacher));
     }
 }

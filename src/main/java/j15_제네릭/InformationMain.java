@@ -22,7 +22,7 @@ public class InformationMain {
 
 
 
-        studentInformation.printInfo();
+        studentInformation.printInfo(); // student.tostring 출력
         teacherInformation.printInfo();
 
         System.out.println("학생이름 : " + studentInformation.getTarget().getName()); // type이 student
