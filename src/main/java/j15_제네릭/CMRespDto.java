@@ -8,4 +8,5 @@ import lombok.Data;
 public class CMRespDto<T> {
     private String msg;
     private T data;
+
 }
