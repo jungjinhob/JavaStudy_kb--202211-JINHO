@@ -7,11 +7,11 @@ public class StudentList {
     public static void main(String[] args) {
         List<Student> students = new ArrayList<Student>();
         List<String> names = new ArrayList<String>();
-        students.add(new Student(20220001,"이승아",21));
-        students.add(new Student(20220002,"김수현",22));
-        students.add(new Student(20220003,"문경원",23));
-        students.add(new Student(20220004,"홍지혜",24));
-        students.add(new Student(20220005,"고동현",25));
+        students.add(new Student(20220001,"이승아",21,null));
+        students.add(new Student(20220002,"김수현",22,null));
+        students.add(new Student(20220003,"문경원",23,null));
+        students.add(new Student(20220004,"홍지혜",24,null));
+        students.add(new Student(20220005,"고동현",25,null));
         names.add("이승아");
         names.add("김수현");
         names.add("문경원");
