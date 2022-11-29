@@ -25,11 +25,11 @@ public class StringSet {
 			}
 		}
 		
-		List<String> nameList = Arrays.asList(new String[] {"김준일","권용범"});
+		List<String> nameList = Arrays.asList(new String[] {"김준일","권용범"}); //asList 괄호안에서 배열객체 생성.-> List로 변환
 		System.out.println(nameList);
 		
-		Set<String> listToSet = new HashSet<String>();
-		listToSet.addAll(nameList); //List값을 set으로 다 옮김.
+		Set<String> listToSet = new HashSet<String>(); //그냥 set
+		listToSet.addAll(nameList); //addAll -> List값을 set으로 다 옮김.
 		//Map은 컬렉션이 아니라서 addAll 사용불가
 		System.out.println(listToSet);
 		
