@@ -7,6 +7,7 @@ import java.util.List;
 public class StudentList3 {
     public static void main(String[] args) {
 //        List<hobby> hobbyList = new ArrayList<hobby>();
+    	int[] arr = {1,2,3,4};
         List<hobby> hl = Arrays.asList(new hobby[]{
                 new hobby(1, "축구"),
                 new hobby(2, "농구"),
@@ -33,7 +34,7 @@ public class StudentList3 {
                 .age(21)
                 .hobbyList(Arrays.asList(new hobby[]{hl.get(0),hl.get(3)}))
                 .build();
-
+        
         List<Student> sl = new ArrayList<Student>();
         sl.add(s1);
         sl.add(s2);
