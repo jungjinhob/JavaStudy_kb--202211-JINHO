@@ -1,10 +1,10 @@
 package j16_컬렉션.List.Map;
 
-import java.security.KeyStore.Entry;
 import java.util.HashMap;
 import java.util.Iterator;
+i
+import java.util.Map.Entry;
 import java.util.Map;
-
 
 
 public class StringMap {
@@ -35,7 +35,7 @@ public class StringMap {
 			System.out.println(v);
 		});
 		System.out.println("------------");
-		for(java.util.Map.Entry<String, String> entry : language.entrySet()) {
+		for(Entry<String, String> entry : language.entrySet()) {
 			System.out.print(entry.getKey());
 			System.out.println(entry.getValue());
 		}
