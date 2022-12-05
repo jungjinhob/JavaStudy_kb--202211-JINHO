@@ -9,13 +9,13 @@ public class CalcMain {
 		//람다는 무조건 인터페이스에서만 사용.
 		//인터페이스에 추상메서드 하나만 있어야한다. ( 두개이상있으면 하나 결정지을수가  없음)(무조건!!)
 		Calculator c1 = (x, y) ->  x + y ; 
-//		Calculator c = new Calculator() { 위와 같음 //생성
-//			
-//			@Override
-//			public int calc(int a, int b) { //정의
-//				return a+b;
-//			}
-//		};
+		Calculator c = new Calculator() { //위와 같음 //생성
+			
+			@Override
+			public int calc(int a, int b) { //정의
+				return a+b;
+			}
+		};
 		int r1 = c1.calc(10,20);
 		
 		CalculatorSub cs = x -> x * x;
