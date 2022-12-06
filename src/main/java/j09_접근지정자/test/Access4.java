@@ -5,8 +5,12 @@ import j09_접근지정자.Access2;
 
 public class Access4 extends Access1 {
 
-    public void access1Printname(){
+    public Access4(String name) {
+		super(name);
+	}
 
+	public void access1Printname(){
+    	
         printName();
 
     }

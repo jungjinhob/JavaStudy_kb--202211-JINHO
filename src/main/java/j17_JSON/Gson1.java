@@ -15,6 +15,7 @@ public class Gson1 {
 		GsonBuilder gsonBuilder = new GsonBuilder();
 		Gson gson2 = gsonBuilder.setPrettyPrinting().create();
 		
+		
 		Map<String, Object> map = new HashMap<>();
 		map.put("name", "김준일");
 		map.put("email", "junil@gmail.com");

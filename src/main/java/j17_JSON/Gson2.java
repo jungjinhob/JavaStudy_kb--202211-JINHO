@@ -18,8 +18,8 @@ public class Gson2 { //빌더형태도 json이랑 왓다갓다 할수잇다.
 				
 				Gson gson = new GsonBuilder()
 						.setPrettyPrinting()
-						.serializeNulls() //builder에서 그값이 누락되어도 key : null 로 출력해준다. 원래는 줄자체가 삭제됨.
-						.excludeFieldsWithoutExposeAnnotation()
+						.serializeNulls() //serialize false로 인해 password 줄 삭제. json형태의 tostring에서
+						.excludeFieldsWithoutExposeAnnotation() //deserialize false이면 값을 null 로 바꿈. 만약 serialize 가 false이면 deserialize 상관없이 null
 						.create();
 				
 				String userJson = gson.toJson(user);

@@ -26,7 +26,8 @@ public class InformationMain {
         teacherInformation.printInfo();
 
         System.out.println("학생이름 : " + studentInformation.getTarget().getName()); // type이 student
-        System.out.println("학생이름2 : " + ((Student)i1.getTarget()).getName()); //type이 오브젝트 (업캐스팅)그래서 안됨
+        System.out.println("학생이름2 : " + ((Student)i1.getTarget()).getName()); //information2 클래스 자료형이 object이기 때문에 student 게터쓸려면
+        //다운캐스팅 해줘야한다.
         //즉 제네릭을 쓰면 업캐스팅 할 필요 가 없다.
     }
 

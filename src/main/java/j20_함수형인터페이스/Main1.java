@@ -13,7 +13,7 @@ public class Main1 {
 		
 		application1.run(); //메소드안에서 메소드를정의 (main안에서 application1 을 정의함.
 		
-		Runnable t1 = () -> {
+		Runnable t1 = () -> { //runnable은 매개변수 없음 구현체안에 실행이 목적.
 			try {
 				for(int i = 0 ; i<100;i++) {
 					System.out.println("시간 미쳣네 ");

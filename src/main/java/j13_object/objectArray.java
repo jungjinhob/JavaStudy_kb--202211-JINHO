@@ -5,7 +5,7 @@ public class objectArray {
         return obj;
 
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { //object로 업캐스팅하면 아무 형식이나 담을수있다.
         Object[] objects = new Object[7];
         objects[0] = new Student(20220001,"정진호");
         objects[1] = new Car("쏘나타","화이트");

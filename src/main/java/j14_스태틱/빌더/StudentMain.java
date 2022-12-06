@@ -5,7 +5,7 @@ public class StudentMain {
         Student student = Student.builder()
                 .studentCode(20220010)
                 .name("정진호")
-                .address("부산")
+                
                 .build();
         System.out.println(student); //student.toString(); (생성자 는 없었음)
 

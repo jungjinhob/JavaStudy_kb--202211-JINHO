@@ -38,7 +38,7 @@ public class Array3 {
                         break; //for break
                     }
                 }
-                if(found){ //증가 안된거면(중복값 안찾음)
+                if(found){ //증가 안된거면(중복값 없었음)
                     randomArray[i] = randomNumber; // 배열에 저장.
                     break; // while break
             }

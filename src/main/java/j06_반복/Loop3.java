@@ -21,7 +21,6 @@ public class Loop3 {
             System.out.println();
             for(int j= i; j<n;j++){
                 System.out.print("*");
-
             }
         } // 5~1
         System.out.println();

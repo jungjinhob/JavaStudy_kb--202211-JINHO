@@ -21,7 +21,7 @@ public class UserRepository {
 	// Read
 	public Map<String, Object> findUserByUsername(String username) { // username에 입력한 정보를 UserMap에 넣기
 		Map<String, Object> userMap = null; //Map하나 선언.
-		for (Map<String, Object> user : userList) { // user과 userlist 자료형 같게함. userList 전체 스캔.
+		for (Map<String, Object> user : userList) { // UserList에 있는 Map을 하나씩 스캔.
 			String _username = (String) user.get("username"); // user.get()(object형) 키값에서 value !!!(username 본값) 받고 _username에 대입
 			if (_username.equals(username)) { // 그 값이 매개변수값이랑 같다면
 				userMap = user; // 그 userList객체(해당조건만족하는것만)를 userMap에 넣어라.

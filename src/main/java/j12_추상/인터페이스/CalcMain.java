@@ -10,7 +10,7 @@ public class CalcMain {
 
         int result1 = calculator.calc(taxPay);
         if(result1 == 0){
-            System.out.println("오류: " + calculator.ERROR_CODE);
+            System.out.println("오류: " + calculator.ERROR_CODE);//자동 스태틱변수
         }else{
             System.out.println("result1 = " + result1);
         }

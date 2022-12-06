@@ -44,12 +44,12 @@ public class Main3 {
 		subject.put("C", "씨언어");
 		subject.put("Node.js", "노드제이에스");
 		
-		Set<String> keySet = subject.keySet();
-		keySet.forEach(key -> {
+		Set<String> keySet = subject.keySet(); //set으로 value만 받을때
+		keySet.forEach(key -> {//set에서 key값기준으로 돌린다.
 			System.out.println(subject.get(key)); //value
 		});
 		
-		Set<Entry<String, String>> entrySet = subject.entrySet();
+		Set<Entry<String, String>> entrySet = subject.entrySet(); //set으로 key, value 다받고 싶을때
 		entrySet.forEach(entry -> {
 			System.out.println(entry.getKey() + " : " + entry.getValue());
 		});

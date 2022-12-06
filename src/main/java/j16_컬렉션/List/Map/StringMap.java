@@ -28,15 +28,15 @@ public class StringMap {
 		
 		System.out.println("----------------여기서부터 전체출력");
 		
-		language.forEach((k, v) -> { // 바로 foreach에 k,v넣어주면됨
-			System.out.print(k);
+		language.forEach((k, v) -> { // 바로 foreach에 k,v넣어주면됨 public void accept가 오버라이드 된것은 ->로 생략.
+			System.out.print(k+"/t");
 			System.out.println(v);
 		});
 		
 		System.out.println("------------");
 		
 		for (Entry<String, String> entry : language.entrySet()) { // Entry<자료형> entry 객체 : language(Map객체).entryset
-			System.out.print(entry.getKey());
+			System.out.print(entry.getKey());								// set으로바꿔서 get키 벨류 한거임.
 			System.out.println(entry.getValue());
 		}
 		

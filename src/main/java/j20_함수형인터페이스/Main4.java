@@ -10,7 +10,8 @@ import java.util.function.Function;
 public class Main4 {
 	
 	public static void main(String[] args) {
-		Function<Integer, String> fx1 = age -> age + "살";
+		//Function<T, R>는 T타입의 인자를 받고, R타입의 객체를 리턴합니다
+		Function<Integer, Integer> fx1 = age -> age + 10;
 		
 		System.out.println(fx1.apply(20));
 		

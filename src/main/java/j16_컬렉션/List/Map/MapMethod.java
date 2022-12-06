@@ -35,7 +35,7 @@ public class MapMethod {
 		subject.put(200, "c#");
 		subject.put(300, "python");
 		map.put("subject", subject);
-//		System.out.println(map);
+		
 		System.out.println(((Map<Integer, String>) map.get("subject")).get(200));
 
 		List<String> hobby = new ArrayList<>();
@@ -45,6 +45,7 @@ public class MapMethod {
 		hobby.add("족구");
 
 		map.put("hobby", hobby);
+		System.out.println(map);
 		// map.get("hobby)는 object List<String>은 list로 다운캐스팅 그 후 .get(인덱스)
 		System.out.println(((List<String>) map.get("hobby")).get(1));
 		
