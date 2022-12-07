@@ -7,7 +7,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Getter
-public class Product {
+public class Order {
 	private int orderId;
     private String consumerName;
     private String productName;
@@ -21,12 +21,10 @@ public class Product {
     public void showOrderInfo() {
     	
     	System.out.println("주문번호 : " + orderId);
-        System.out.println("주문번호 : " + consumerName);
-        System.out.println("주문번호 : " + productName);
-        System.out.println("주문번호 : " + price);
-        System.out.println("주문번호 : " + stock);
+    	System.out.println("상품명 : " + productName);
+        System.out.println("구매자 : " + consumerName);
+        System.out.println("가격 : " + price);
+        System.out.println("수량 : " + stock);
+        
     }
-
-
-
 }

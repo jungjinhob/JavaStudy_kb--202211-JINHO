@@ -1,13 +1,12 @@
 package 과제1111;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Scanner;
-
 public class Main {
 	
     public static void main(String[] args) {
+    	Calculator c = new Calculator();
+    	
+    	System.out.println(c.add(10,20));
+    	System.out.println(c.sub(200,100));
     	
     }
 }
