@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\eclipse_workspace\JavaStudy_kb--202211-JINHO\.metadata\.plugins\org.eclipse.jdt.core
