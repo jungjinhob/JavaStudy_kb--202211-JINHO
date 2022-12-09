@@ -9,7 +9,8 @@ public class Main {
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String userJson = gson.toJson(g);
 		System.out.println(userJson);
-	}
+		
+	} 
 	
 
 }
