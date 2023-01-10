@@ -37,7 +37,42 @@ public class AuthService {
 	}
 	
 	public ResponseDto<loginDto> login(AuthPostDto dto){
+		
+//		입력받은 email 으로 데이터베이스에서 검색
+		String email = dto.getEmail();
+		String password = dto.getPassword();
+		MemberEntity member;
+		
+		
+//		존재하지 않는다면 없는 아이디 로그인실패 반환
+		
+		try {
+			member = memberRepository.findById(email).get();
+			
+		}catch (Exception e ) {
+			return ResponseDto.setFailed("login failed");
+		}
+		
+//		존재한다면 입력받은 패스워드와 데이터베이스의 패스워드와 동일한지 검사
+//		동일하지 않다면 로그인 실패 반환	
+		try {
+			String savedPassword = member.getPassword();
+			if(!password.equals(savedPassword)) {
+				return ResponseDto.setFailed("로그인 실패");
+			}
+
+			
+			
+		}catch (Exception e ) {
+			return ResponseDto.setFailed("데이터베이스 오류");
+		}
+		
+//		맞으면 토큰 생성 후 토큰 및 만료시간 반환
 		loginDto result = new loginDto("",3600000);
 		return ResponseDto.setSuccess("", result);
+
+		
+		
+
 	}
 }
